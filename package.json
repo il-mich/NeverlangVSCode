@@ -1,0 +1,25 @@
+{
+    "name": "neverlangvscode",
+    "displayName": "Neverlang VS Code",
+    "description": "VS Code support for the Neverlang language workbench",
+    "version": "0.0.1",
+    "engines": {
+        "vscode": "^1.50.0"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "nlg",
+            "aliases": ["Neverlang", "nlg"],
+            "extensions": [".nl"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "nlg",
+            "scopeName": "source.nlg",
+            "path": "./syntaxes/Neverlang.tmLanguage"
+        }]
+    }
+}

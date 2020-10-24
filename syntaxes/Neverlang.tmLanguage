@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>fileTypes</key>
+	<array>
+		<string>nl</string>
+	</array>
+	<key>name</key>
+	<string>Neverlang</string>
+	<key>patterns</key>
+	<array>
+		<dict>
+			<key>comment</key>
+			<string>Main language keywords</string>
+			<key>match</key>
+			<string>\b(modules?|roles?|reference|concrete|syntax|from|imports|declare|endemic|slices?|language|with|when|exception|type|type_any|left)\b</string>
+			<key>name</key>
+			<string>keyword.source.nlg</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>"[^"]+"</string>
+			<key>name</key>
+			<string>string.double.nlg</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>/(?:\\.|[^/\\]++)+/</string>
+			<key>name</key>
+			<string>string.regexp.nlg</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>//.*
+</string>
+			<key>name</key>
+			<string>comment.line.nlg</string>
+		</dict>
+		<dict>
+			<key>begin</key>
+			<string>/\*</string>
+			<key>end</key>
+			<string>\*/</string>
+			<key>name</key>
+			<string>comment.block.nlg</string>
+		</dict>
+		<dict>
+			<key>begin</key>
+			<string>(\.|\&lt;|@)\{</string>
+			<key>end</key>
+			<string>\}(\.|\&gt;)</string>
+			<key>patterns</key>
+			<array>
+				<dict>
+					<key>comment</key>
+					<string>Nonterminals</string>
+					<key>match</key>
+					<string>\$\d+</string>
+					<key>name</key>
+					<string>variable.language.nlg</string>
+				</dict>
+				<dict>
+					<key>include</key>
+					<string>source.java</string>
+				</dict>
+			</array>
+		</dict>
+	</array>
+	<key>scopeName</key>
+	<string>source.nlg</string>
+	<key>uuid</key>
+	<string>16c2711b-9108-48f0-995d-9a0eee326d7e</string>
+</dict>
+</plist>
