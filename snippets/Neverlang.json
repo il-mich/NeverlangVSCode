@@ -1,0 +1,27 @@
+{
+	"Imports": {
+		"prefix": ["imports", "java.lang.Util"],
+		"body": [ "imports {", "\t${1:java.lang.Util.*};$0", "}" ],
+		"description": "Usual Java imports"
+	},
+	"Module": {
+		"prefix": "module",
+		"body": [ "module ${1:com.example.ModuleName} {", "\t$0", "}" ],
+		"description": "Basic module structure"
+	},
+	"Reference syntax": {
+		"prefix": ["reference", "syntax"],
+		"body": [ "reference syntax {", "\t${1:NonTerminalName} <-- ${2:NonTerminalName} ${1:NonTerminalName};$0", "}" ],
+		"description": "Standard reference syntax structure"
+	},
+	"Non terminals": {
+		"prefix": "<--",
+		"body": "${1:NonTerminalName} <-- ${2:NonTerminalName} ${1:NonTerminalName};$0",
+		"description": "Slice composition for the reference syntax"
+	},
+	"Role rule": {
+		"prefix": "role",
+		"body": [ "role (${1:evaluation}) {", "\t$0", "}" ],
+		"description": "Structure for the implementation section"
+	}
+}

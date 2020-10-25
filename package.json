@@ -20,6 +20,11 @@
             "language": "nlg",
             "scopeName": "source.nlg",
             "path": "./syntaxes/Neverlang.tmLanguage"
+        }],
+        "snippets": [{
+            "language": "nlg",
+            "scopeName": "source.nlg",
+            "path": "./snippets/Neverlang.json"
         }]
     }
 }
