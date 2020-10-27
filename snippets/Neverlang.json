@@ -14,9 +14,14 @@
 		"body": [ "reference syntax {", "\t${1:NonTerminalName} <-- ${2:NonTerminalName} ${1:NonTerminalName};$0", "}" ],
 		"description": "Standard reference syntax structure"
 	},
-	"Non terminals": {
+	"Non terminals recursive": {
 		"prefix": "<--",
 		"body": "${1:NonTerminalName} <-- ${2:NonTerminalName} ${1:NonTerminalName};$0",
+		"description": "Slice composition for the reference syntax"
+	},
+	"Non terminal": {
+		"prefix": "<--",
+		"body": "${1:NonTerminalName} <-- ${2:NonTerminalName};$0",
 		"description": "Slice composition for the reference syntax"
 	},
 	"Role rule": {
