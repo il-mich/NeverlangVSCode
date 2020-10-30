@@ -17,7 +17,8 @@ Welcome to the Neverlang VS Code extension!
 
 This extension gives some basic syntax highlighting, which as of today does not
 include embedded syntaxes for the languages used in the implementation of the slices.
-The package includes some useful snippets.
+
+Some useful snippets are also included to streamline the writing process.
 
 ### "Installation"
 
@@ -28,9 +29,9 @@ Clone this repo in your `~/.vscode/extensions` folder and restart VS Code.
 It is recommended to add `"editor.snippetSuggestions": "top"` to your global or
 local VS Code config in order to get snippet matches before completion suggestions.
 
-The "Non terminals" rule unfortunately has to be triggered manually:
-write the prefix symbol `<--` or a subset of it and (on Linux) press
-`ctrl + Space` to open the IntelliSense menu.
+The "Non terminal" and "Non terminals recursive" rules unfortunately
+have to be triggered manually: write the prefix symbol `<--` or a subset
+of it and (on Linux) press `ctrl + Space` to open the IntelliSense menu.
 
 ### Contributions
 
